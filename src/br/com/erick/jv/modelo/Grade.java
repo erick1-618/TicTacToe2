@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 public class Grade implements CampoObservador{
 	public Campo[][] campos = new Campo[3][3];
 	private int vez = 1;
-	private List<Consumer<Integer>> observadores= new ArrayList();
+	private List<Consumer<Integer>> observadores= new ArrayList<>();
 	
 	public Grade() {
 		for(int i = 0; i < 3; i++) {
@@ -69,7 +69,6 @@ public class Grade implements CampoObservador{
 				return false;
 			}
 		};
-		Predicate<Integer> marcado = n -> n != 0;
 		List<Integer> resultadosDaMatriz = new ArrayList();
 		
 		int a1 = campos[0][0].getMarca() + campos[0][1].getMarca() + campos[0][2].getMarca();   

@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 
 import br.com.erick.jv.modelo.Grade;
 
+@SuppressWarnings("serial")
 public class PainelGrade extends JPanel{
 	public PainelGrade(Grade g) {
 		setLayout(new GridLayout(3, 3));
