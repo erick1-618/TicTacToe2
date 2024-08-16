@@ -11,9 +11,10 @@ import br.com.erick.jv.modelo.Campo;
 import br.com.erick.jv.modelo.CampoEventos;
 import br.com.erick.jv.modelo.CampoObservador;
 
+@SuppressWarnings("serial")
 public class BotaoCampo extends JButton implements CampoObservador, MouseListener{
 	private Campo campo;
-	private final Color BG_PADRAO = Color.GRAY;
+	private final Color BG_PADRAO = Color.LIGHT_GRAY;
 	
 	public BotaoCampo(Campo c) {
 		this.campo = c;
